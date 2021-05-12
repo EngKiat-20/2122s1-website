@@ -110,17 +110,6 @@ export const charts = {
         payloadToData: makeErrorChartPayloadToTimestampBuckets,
         getPayload: getErrorChartPayload,
     },
-    'arrival-rate': {
-        options: {
-            ...DEFAULTS.graphOptions,
-            title: 'arrivals/sec',
-            colors: ['green'],
-        },
-        createChart: createColumnChart,
-        draw: drawGoogleChart,
-        //payloadToData: makeErrorChartPayloadToTimestampBuckets,
-        //getPayload: getErrorChartPayload,
-    },
 };
 
 /**
