@@ -113,7 +113,7 @@ export const charts = {
     'error-rate': {
         options: {
             ...DEFAULTS.graphOptions,
-            title: 'errors/sec',
+            title: 'arrivals/sec',
             colors: ['green'],
         },
         createChart: createColumnChart,
