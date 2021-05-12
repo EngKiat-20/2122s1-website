@@ -110,6 +110,17 @@ export const charts = {
         payloadToData: makeErrorChartPayloadToTimestampBuckets,
         getPayload: getErrorChartPayload,
     },
+    'error-rate': {
+        options: {
+            ...DEFAULTS.graphOptions,
+            title: 'errors/sec',
+            colors: ['red'],
+        },
+        createChart: createColumnChart,
+        draw: drawGoogleChart,
+        payloadToData: makeErrorChartPayloadToTimestampBuckets,
+        getPayload: getErrorChartPayload,
+    },
 };
 
 /**
