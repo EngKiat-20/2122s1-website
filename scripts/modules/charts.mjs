@@ -118,8 +118,8 @@ export const charts = {
         },
         createChart: createColumnChart,
         draw: drawGoogleChart,
-        payloadToData: makeErrorChartPayloadToTimestampBuckets,
-        getPayload: getErrorChartPayload,
+        //payloadToData: makeErrorChartPayloadToTimestampBuckets,
+        //getPayload: getErrorChartPayload,
     },
 };
 
