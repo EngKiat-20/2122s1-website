@@ -114,7 +114,7 @@ export const charts = {
         options: {
             ...DEFAULTS.graphOptions,
             title: 'errors/sec',
-            colors: ['red'],
+            colors: ['green'],
         },
         createChart: createColumnChart,
         draw: drawGoogleChart,
