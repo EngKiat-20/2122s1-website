@@ -110,7 +110,7 @@ export const charts = {
         payloadToData: makeErrorChartPayloadToTimestampBuckets,
         getPayload: getErrorChartPayload,
     },
-    'error-rate': {
+    'arrival-rate': {
         options: {
             ...DEFAULTS.graphOptions,
             title: 'arrivals/sec',
