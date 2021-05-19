@@ -111,7 +111,7 @@ export const charts = {
         getPayload: getErrorChartPayload,
     },
 
-    'arrival-rate': {
+    /*'arrival-rate': {
         options: {
             ...DEFAULTS.graphOptions,
             title: 'arrivals/sec',
@@ -120,7 +120,7 @@ export const charts = {
         draw: drawGoogleChart,
         payloadToData: makeTimestampBuckets,
         getPayload: getArrivalChartPayload,
-    },
+    },*/
 };
 
 /**
