@@ -1,6 +1,7 @@
 import { DEFAULTS, hideDom, showDom, makeNowFrom } from '../commons.mjs';
 import { createColumnChart, drawGoogleChart } from './google-charts.mjs';
 import getErrorChartPayload from './connector.mjs';
+import getArrivalChartPayload from './connector.mjs';
 
 /**
  *
