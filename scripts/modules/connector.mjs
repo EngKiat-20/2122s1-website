@@ -1,6 +1,7 @@
 const host = `http://localhost:3000`;
 const END_POINTS = {
     errors: '/stats/errors',
+    arrivals: '/stats/arrivals'
 };
 
 /**
