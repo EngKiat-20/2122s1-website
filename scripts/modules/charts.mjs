@@ -116,6 +116,7 @@ export const charts = {
         options: {
             ...DEFAULTS.graphOptions,
             title: 'arrivals/sec',
+            colors: ['lime']
         },
         createChart: createColumnChart,
         draw: drawGoogleChart,
