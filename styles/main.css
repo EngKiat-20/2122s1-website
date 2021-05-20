@@ -20,6 +20,10 @@ body {
     height: 30vh;
 }
 
+#configuration {
+    color:#aaaaaa;
+}
+
 /* Warning */
 .warning-icon {
     position: absolute;
