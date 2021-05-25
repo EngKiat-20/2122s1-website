@@ -40,7 +40,7 @@ function makeFromDurationUrl(baseUrl, from, duration) {
  * @param duration the amount of minutes from the `from` parameter
  * @returns a Promise that resolves with the Error Chart's payload.
  */
-export const getErrorChartPayload = function(from, duration) {
+export default function getErrorChartPayload(from, duration) {
     const url = makeFromDurationUrl(`${host}${END_POINTS.errors}`, from, duration);
     return getChartPayload(url);
 }
