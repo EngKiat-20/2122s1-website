@@ -12,7 +12,7 @@ function startup() {
   }
 
   function updateFirst(event) {
-    var x = document.querySelector("div#error-rate");
+    var x = document.querySelector("div#error-rate.chart");
   
     if (x) {
       x.style.color = event.target.value;
