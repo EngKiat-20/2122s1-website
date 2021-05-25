@@ -1,4 +1,3 @@
-import {charts} from "./scripts/modules/charts.mjs"
 var errorColor;
 var arrivalsColor;
 var errorDefaultColor = "#ff0000";
