@@ -13,9 +13,8 @@ function startup() {
   }
 
   function updateErrorColor(event) {
-    var errorChart = charts;
+    var errorChart = charts.errorRate.options.colors[0];
   
-    console.log(errorChart)
     /*if (errorChart) {
       errorRate.options.colors[0] = event.target.value;
     }*/
