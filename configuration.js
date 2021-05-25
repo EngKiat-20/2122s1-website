@@ -12,7 +12,7 @@ function startup() {
   }
 
   function updateFirst(event) {
-    var x = document.querySelector("div#configuration");
+    var x = document.querySelector("div#error-rate");
   
     if (x) {
       x.style.color = event.target.value;
