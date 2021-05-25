@@ -15,6 +15,6 @@ function startup() {
     var errorChart = document.querySelector("div#error-rate.chart");
   
     if (errorChart) {
-      errorChart.style.color = event.target.value;
+      errorChart.color = event.target.value;
     }
   }
