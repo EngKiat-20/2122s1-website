@@ -13,9 +13,9 @@ function startup() {
   }
 
   function updateFirst(event) {
-    var p = document.querySelector("p");
+    var x = document.querySelector("div#configuration");
   
-    if (p) {
-      p.style.color = event.target.value;
+    if (x) {
+      x.style.color = event.target.value;
     }
   }
