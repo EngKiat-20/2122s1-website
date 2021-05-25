@@ -7,14 +7,14 @@ window.addEventListener("load", startup, false);
 function startup() {
     errorColor = document.querySelector("#errorColor");
     errorColor.value = errorDefaultColor;
-    errorColor.addEventListener("input", updateFirst, false);
+    errorColor.addEventListener("input", updateErrorColor, false);
     errorColor.select();
   }
 
-  function updateFirst(event) {
-    var x = document.querySelector("div#error-rate.chart");
+  function updateErrorColor(event) {
+    var errorChart = document.querySelector("div#error-rate.chart");
   
-    if (x) {
-      x.style.color = event.target.value;
+    if (errorChart) {
+      errorChart.style.color = event.target.value;
     }
   }
