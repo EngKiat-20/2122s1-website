@@ -9,7 +9,6 @@ function startup() {
     errorColor = document.querySelector("#errorColor");
     errorColor.value = errorDefaultColor;
     errorColor.addEventListener("input", setErrorColor, false);
-    errorColor.addEventListener("change", updateErrorColor, false);
     errorColor.select();
   }
 
