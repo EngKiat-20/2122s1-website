@@ -1,7 +1,7 @@
 var errorColor;
 var arrivalsColor;
 var errorDefaultColor = "#ff0000";
-var arrivalsDefaultColor = "#ff0000";
+var arrivalsDefaultColor = "#00ff00";
 
 window.addEventListener("load", startup, false);
 function startup() {
