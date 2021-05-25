@@ -12,7 +12,7 @@ function startup() {
   }
 
   function updateErrorColor(event) {
-    var errorChart = document.querySelector("div#error-rate.chart");
+    var errorChart = document.querySelector("div#error-rate.charts.error-rate.options.colors[0]");
   
     if (errorChart) {
       errorChart.color = event.target.value;
