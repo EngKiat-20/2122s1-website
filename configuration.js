@@ -1,11 +1,12 @@
 var errorColor;
 var arrivalsColor;
-var defaultColor = "#ff0000";
+var errorDefaultColor = "#ff0000";
+var arrivalsDefaultColor = "#ff0000";
 
 window.addEventListener("load", startup, false);
 function startup() {
     errorColor = document.querySelector("#errorColor");
-    errorColor.value = defaultColor;
+    errorColor.value = errorDefaultColor;
     errorColor.addEventListener("input", updateFirst, false);
     errorColor.addEventListener("change", updateAll, false);
     errorColor.select();
