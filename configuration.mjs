@@ -1,7 +1,7 @@
 import {charts} from './scripts/modules/charts.mjs';
 var errorColor;
-var arrivalsColor;
 var errorDefaultColor = "#ff0000";
+var arrivalsColor;
 var arrivalsDefaultColor = "#00ff00";
 
 window.addEventListener("load", startup, false);
@@ -13,7 +13,7 @@ function startup() {
   }
 
   function updateErrorColor(event) {
-    var errorChart = charts.errorRate.options.colors;
+    var errorChart = charts.errorRate.options.colors[0];
     
     console.log(errorChart)
     if (errorChart) {
