@@ -100,7 +100,7 @@ const hideLoadingAnimation = hideDom;
 const showLoadingAnimation = showDom;
 
 export const charts = {
-    'error-rate': {
+    'errorRate': {
         options: {
             ...DEFAULTS.graphOptions,
             title: 'errors/sec',
@@ -112,7 +112,7 @@ export const charts = {
         getPayload: getErrorChartPayload,
     },
 
-    'arrival-rate': {
+    'arrivalRate': {
         options: {
             ...DEFAULTS.graphOptions,
             title: 'arrivals/sec',
