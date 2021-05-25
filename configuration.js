@@ -1,4 +1,5 @@
 var errorColor;
+var arrivalsColor;
 var defaultColor = "#ff0000";
 
 window.addEventListener("load", startup, false);
