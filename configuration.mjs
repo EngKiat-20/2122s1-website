@@ -18,19 +18,13 @@ function startup() {
   }
 
   function setErrorColor(event) {
-    var errorChart = charts.errorRate.options.colors[0];
-    
-    console.log(errorChart)
-    if (errorChart) {
-      errorChart = event.target.value;
+    if (charts.errorRate.options.colors[0]) {
+      charts.errorRate.options.colors[0] = event.target.value;
     }
   }
 
   function setArrivalsColor(event) {
-    var arrivalsChart = charts.arrivalRate.options.colors[0];
-    
-    console.log(arrivalsChart)
-    if (arrivalsChart) {
-      arrivalsChart = event.target.value;
+    if (charts.arrivalRate.options.colors[0]) {
+      charts.arrivalRate.options.colors[0] = event.target.value;
     }
   }
