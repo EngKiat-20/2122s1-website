@@ -45,7 +45,7 @@ export default function getErrorChartPayload(from, duration) {
     return getChartPayload(url);
 }
 
-export default function getArrivalChartPayload(from, duration) {
+export function getArrivalChartPayload(from, duration) {
     const url = makeFromDurationUrl(`${host}${END_POINTS.arrivals}`, from, duration);
     return getChartPayload(url);
 }
