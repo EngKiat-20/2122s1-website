@@ -10,6 +10,11 @@ function startup() {
     errorColor.value = errorDefaultColor;
     errorColor.addEventListener("input", setErrorColor, false);
     errorColor.select();
+
+    arrivalsColor = document.querySelector("#arrivalsColor");
+    arrivalsColor.value = arrivalsDefaultColor;
+    arrivalsColor.addEventListener("input", setArrivalsColor, false);
+    arrivalsColor.select();
   }
 
   function setErrorColor(event) {
@@ -18,5 +23,14 @@ function startup() {
     console.log(errorChart)
     if (errorChart) {
       errorChart = event.target.value;
+    }
+  }
+
+  function setArrivalsColor(event) {
+    var arrivalsChart = charts.arrivalRate.options.colors[0];
+    
+    console.log(arrivalsChart)
+    if (arrivalsChart) {
+      arrivalsChart = event.target.value;
     }
   }
