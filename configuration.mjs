@@ -29,3 +29,28 @@ function startup() {
       charts.arrivalRate.options.colors[0] = event.target.value;
     }
   }
+
+document.getElementById("refreshRate").addEventListener("input", setRefreshRate);
+document.getElementById("duration").addEventListener("input", setDuration);
+document.getElementById("bucketSize").addEventListener("input", setBucketSize);
+
+  function setRefreshRate() {
+    var newRefreshRate = document.getElementById("refreshRate").value;
+    newRefreshRate = parseInt(newRefreshRate);
+    DEFAULTS.refreshRate = newRefreshRate
+    console.log(DEFAULTS.refreshRate)
+  }
+
+  function setDuration() {
+    var newDuration = document.getElementById("duration").value;
+    newDuration = parseInt(newDuration);
+    DEFAULTS.duration = newDuration
+    console.log(DEFAULTS.duration)
+  }
+
+  function setBucketSize() {
+    var newBucketSize = document.getElementById("bucketSize").value;
+    newBucketSize = parseInt(newBucketSize);
+    DEFAULTS.bucketSize = newBucketSize
+    console.log(DEFAULTS.bucketSize)
+  }
