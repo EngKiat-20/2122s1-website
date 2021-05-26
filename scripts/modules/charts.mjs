@@ -106,9 +106,6 @@ export const charts = {
             title: 'errors/sec',
             colors: ['red'],
         },
-        refreshRate: 3000, // Milliseconds
-        duration: 3, // Minutes
-        bucketSize: 5, // Seconds
         createChart: createColumnChart,
         draw: drawGoogleChart,
         payloadToData: makeErrorChartPayloadToTimestampBuckets,
@@ -121,9 +118,6 @@ export const charts = {
             title: 'arrivals/sec',
             colors: ['lime']
         },
-        refreshRate: 3000, // Milliseconds
-        duration: 3, // Minutes
-        bucketSize: 5, // Seconds
         createChart: createColumnChart,
         draw: drawGoogleChart,
         payloadToData: makeTimestampBuckets,
