@@ -24,6 +24,11 @@ body {
     color:#aaaaaa;
 }
 
+div.config-tab{
+    display: inline-block;
+    padding: 10px;
+}
+
 /* Warning */
 .warning-icon {
     position: absolute;

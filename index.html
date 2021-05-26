@@ -24,20 +24,23 @@
                 <div id="title">Queue Dashboard</div>
             </div>
             <div id="configuration">
-                <div>
+                <div class="config-tab">
+                    <label for="refreshRate">Refresh Rate (ms):</label>
                     <input type="text" id="refreshRate" value="3000">
                 </div>
-                <div>
+                <div class="config-tab">
+                    <label for="duration">Duration (min):</label>
                     <input type="text" id="duration" value="3">
                 </div>
-                <div>
+                <div class="config-tab">
+                    <label for="bucketSize">Bucket size (seconds):</label>
                     <input type="text" id="bucketSize" value="5">
                 </div>
-                <div id="error-color-picker">
+                <div id="error-color-picker" class="config-tab">
                     <label for="errorColor">Error chart color:</label>
                     <input type="color" id="errorColor" value="#ff0000">
                 </div>
-                <div id="arrivals-color-picker">
+                <div id="arrivals-color-picker" class="config-tab">
                     <label for="arrivalsColor">Arrivals chart color:</label>
                     <input type="color" id="arrivalsColor" value="#00ff00">
                 </div>
