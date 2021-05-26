@@ -32,8 +32,12 @@ body {
     display: inline-block;
 }
 
-#showHideButton {
+#showHideButtons {
     margin-left: 73%;
+}
+
+#showButton {
+    display: none;
 }
 
 div.config-tab{

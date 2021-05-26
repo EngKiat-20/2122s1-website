@@ -55,4 +55,24 @@ document.getElementById("bucketSize").addEventListener("input", setBucketSize);
     console.log(DEFAULTS.bucketSize)
   }
 
-  
+function hide() {
+  var showButton = document.getElementById('showButton');
+  var hideButton = document.getElementById('hideButton');
+  var configTabs = document.getElementById('config-tabs');
+  showButton.style.display = 'inline';
+  hideButton.style.display = 'none'
+  configTabs.style.display = 'none';
+
+}
+
+function show() {
+  var showButton = document.getElementById('showButton');
+  var hideButton = document.getElementById('hideButton');
+  var configTabs = document.getElementById('config-tabs');
+  showButton.style.display = 'none';
+  hideButton.style.display = 'inline';
+  configTabs.style.display = 'inline-block';
+}
+
+document.getElementById("showButton").addEventListener("click", show);
+document.getElementById("hideButton").addEventListener("click", hide);
