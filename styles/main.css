@@ -21,7 +21,19 @@ body {
 }
 
 #configuration {
+    background-color: #111111;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
     color:#aaaaaa;
+}
+
+.config-header-element {
+    display: inline-block;
+}
+
+#showHideButton {
+    margin-left: 73%;
 }
 
 div.config-tab{

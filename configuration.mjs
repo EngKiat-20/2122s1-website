@@ -54,3 +54,5 @@ document.getElementById("bucketSize").addEventListener("input", setBucketSize);
     DEFAULTS.bucketSize = newBucketSize
     console.log(DEFAULTS.bucketSize)
   }
+
+  
