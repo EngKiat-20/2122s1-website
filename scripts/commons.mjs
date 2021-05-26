@@ -1,7 +1,4 @@
 export const DEFAULTS = {
-    refreshRate: 3000, // Milliseconds
-    duration: 3, // Minutes
-    bucketSize: 5, // Seconds
     graphOptions: {
         // Google Chart Options
         legend: { position: 'none' },

@@ -103,6 +103,9 @@ export const charts = {
     'errorRate': {
         options: {
             ...DEFAULTS.graphOptions,
+            refreshRate: 3000, // Milliseconds
+            duration: 3, // Minutes
+            bucketSize: 5, // Seconds
             title: 'errors/sec',
             colors: ['red'],
         },
@@ -115,6 +118,9 @@ export const charts = {
     'arrivalRate': {
         options: {
             ...DEFAULTS.graphOptions,
+            refreshRate: 3000, // Milliseconds
+            duration: 3, // Minutes
+            bucketSize: 5, // Seconds
             title: 'arrivals/sec',
             colors: ['lime']
         },
