@@ -4,6 +4,8 @@ var errorColor;
 var errorDefaultColor = "#ff0000";
 var arrivalsColor;
 var arrivalsDefaultColor = "#00ff00";
+var waitingColor;
+var waitingDefaultColor = "#008000";
 
 window.addEventListener("load", startup, false);
 function startup() {
@@ -16,6 +18,11 @@ function startup() {
     arrivalsColor.value = arrivalsDefaultColor;
     arrivalsColor.addEventListener("input", setArrivalsColor, false);
     arrivalsColor.select();
+
+    waitingColor = document.querySelector("#waitingColor");
+    waitingColor.value = waitingDefaultColor;
+    waitingColor.addEventListener("input", setWaitingColor, false);
+    waitingColor.select();
   }
 
   function setErrorColor(event) {
@@ -27,6 +34,13 @@ function startup() {
   function setArrivalsColor(event) {
     if (charts.arrivalRate.options.colors[0]) {
       charts.arrivalRate.options.colors[0] = event.target.value;
+    }
+  }
+
+  function setWaitingColor(event) {
+    var panelArray = document.getElementsByClassName("panel")
+    for (var i = 0; i < panelArray.length;){
+      panelArray[i].style.backgroundColor = event.target.value
     }
   }
 
