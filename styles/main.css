@@ -64,6 +64,21 @@ div.config-tab{
     row-gap: 5px;
 }
 
+.panel.warning {
+    background-color: orangered;
+}
+
+.panel .label {
+    flex: 1;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.panel .count {
+    flex: 1.5;
+    font-size: 2em;
+    margin: 0;
+}
 /* Warning */
 .warning-icon {
     position: absolute;
