@@ -14,6 +14,7 @@ body {
     background-color: #111111;
     padding: 20px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .chart {
@@ -43,6 +44,24 @@ body {
 div.config-tab{
     display: inline-block;
     padding: 10px;
+}
+
+.panel {
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.panel-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
 }
 
 /* Warning */
