@@ -39,9 +39,10 @@ function startup() {
 
   function setWaitingColor(event) {
     var panelArray = document.getElementsByClassName("panel")
-    for (var i = 0; i < panelArray.length;){
-      panelArray[i].style.backgroundColor = event.target.value
-    }
+      panelArray[0].style.backgroundColor = event.target.value
+      panelArray[1].style.backgroundColor = event.target.value
+      panelArray[2].style.backgroundColor = event.target.value
+      panelArray[3].style.backgroundColor = event.target.value
   }
 
 document.getElementById("refreshRate").addEventListener("input", setRefreshRate);
