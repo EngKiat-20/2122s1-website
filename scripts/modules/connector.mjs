@@ -50,3 +50,7 @@ export const getArrivalChartPayload = function(from, duration) {
     const url = makeFromDurationUrl(`${host}${END_POINTS.arrivals}`, from, duration);
     return getChartPayload(url);
 }
+
+export const getMaximum = function() {
+    
+}
